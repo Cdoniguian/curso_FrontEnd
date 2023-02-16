@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+  }
+
+p{
+    color:tomato
+}
+h1 {
+    color:tomato;
+}
+.lista {
+color:blue;
+font-size: 1em;
+}
+#mi_parrafo{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+   
+   
+}
+.checkbox{
+    font-weight: bold;
+    border: 1px solid;
+    width: 80px;
+    height: 20px;
+    text-align: center;
+}
+/*---------------inicio-animacion loader ---------------*/
+@keyframes loader{
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+.loader::after, .loader::before {
+    animation: loader 2s linear infinite;
+    content: '';
+    border: 5px solid red;
+    width: 20em;
+    height: 20em;
+    position: absolute;
+    border-radius: 50%;
+}
+.loader::after {
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+/*----------------fin animacion loader ---------------*/
+.contenedorImagen {
+    display: flex;
+    justify-content: center;
+    
+    border: 10px solid red;
+    
+}
+.imagen {
+    border: 1px solid #aaa;
+}
+
+.imagen1 {
+    display: none;
+    
+}
+/*----------------carrucel ---------------*/
+.dimensiones {
+    margin-left: 20em;
+    width: 20%;
+    height: 20%;
+
+}
+
+.dimensiones2 {
+   
+    width: 20%;
+    height: 20%;
+
+}
+.colorStyle p{
+    color:black
+}
+#carouselExampleCaptions h5{
+    color:red
+}
+#carouselExampleCaptions p{
+    color:blue
+}
+/*----------------carrucel ---------------*/
+
+
+
+
+@media(max-width: 600px) {
+    .contenedorImagen {
+      background-color: lightblue;
+    }
+}
+@media(max-width: 450px)  {
+    .contenedorImagen {
+      background-color: rgb(220, 230, 173);
+    }
+    .imagen {
+        display: none;
+        width: 80%;
+        height: 80%;
+    }
+    .imagen1 {
+        display: block;
+        width: 80%;
+        height: 80%;
+        border: 3px solid #aaa;
+    }
+  
+}
